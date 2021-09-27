@@ -1,0 +1,178 @@
+$primario : hsl(225, 100%, 94%);
+$primarioLight : hsl(245, 75%, 52%);
+$colorAzul : hsl(225, 100%, 98%);
+$desaturadoAzul : hsl(224, 23%, 55%);
+$azulOscuro :  hsl(223, 47%, 23%);
+$hover : #7052FF;
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 98%;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: $primario;
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-content: center;
+}
+    
+
+
+
+.cardOrder{
+    width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+   
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+}
+
+.header{
+    background-image: url(../images/illustration-hero.svg);
+    background-repeat: no-repeat;
+    height: 155px;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.body h2{
+    color: $azulOscuro;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+}
+.body p{
+    margin: 0 auto;
+    color: $desaturadoAzul;
+    padding-bottom: 1rem;
+    max-width: 290px;
+}
+.price{
+    margin: 0 auto;
+    background-color: $colorAzul;
+    padding: 1.2rem;
+    width: 280px;
+    border-radius: .8rem;
+    display: flex;
+    align-items: center;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    margin-bottom: 2rem;
+}
+.ico {
+    align-content: center;
+    display: flex;
+}
+.contentPrice{
+    color: $azulOscuro;
+    margin: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: left;
+    line-height: 0;
+}
+.price a{
+    color: $primarioLight;
+    font-size: .9rem;
+    font-weight: 500;
+    float: right;
+    width: 100%;
+    text-align: right;
+}
+
+.price a:hover{
+    color: $hover;
+    text-decoration: none;
+    transition: .1s;
+}
+
+.btn{
+    background: $primarioLight;
+    width: 280px;
+    display: block;
+    margin: 0 auto;
+    padding: .8rem 1rem;
+    color: white;
+    font-weight: 900;
+    font-size: 13px;
+    letter-spacing: 1px;
+    border-radius: .5rem;
+    box-shadow: 0px 20px 10px #7280a736;
+   
+
+}
+a.btn:hover{
+    background-color: $hover;
+    cursor: pointer;
+    transition: .1s;
+}
+
+a.blackLink{
+    display: inline-flex;
+    margin: 2rem;
+    color: $desaturadoAzul;
+    font-weight: 900;
+    font-size: .7rem;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin-bottom: 2.5rem;
+}
+a.blackLink:hover{
+    color: $azulOscuro;
+}
+
+.attribution{
+        margin: 0 auto;
+        display: block;
+        position: fixed;
+        text-align: center;
+        width: 100%;
+        bottom: 1rem;
+}
+
+
+
+
+@media only screen and (max-width: 376px){
+    body{
+        background-image: url(../images/pattern-background-mobile.svg)
+    }
+    .body h2{
+        margin-top: 1rem;
+        margin-bottom: .7rem;
+    }
+    .price, .btn{
+        width: 230px;
+    }
+    .cardOrder{
+        width: 310px;
+    }
+    .body p{
+        width: 260px;
+    }
+    .price{
+        margin-top: 1rem;
+    }
+    h5 {
+        margin-top: 1rem;
+    }
+    .contentPrice{
+        width: 0px;
+    }
+    .price a{
+        font-size: .8rem;
+        font-weight: 900;
+    }
+    a.blackLink{
+        font-size: 1rem;
+    }
+}
